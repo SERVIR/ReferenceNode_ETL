@@ -8,3 +8,8 @@ Scripts we're also created to compile MODIS classified landcover data into yearl
 
 **Fire ETL:**
 The Fire ETL grabs the 5minute updates directy from the MODIS FTP site maintained by NASA. The script builds a 90day archive of these in a Esri formatted file geodatabase and subesequently updates a target map service on ArcGIS Server.
+
+**TRMM Rainfall ETL:**
+The TRMM ETL does a number of things including downloading the 3-hour source CSVs from the NASA FTP sites. Build the raster from that data, apply the color map and import into an Esri FGDB format. It also optionally builds composites of n time periods (currently 24 and 168hrs respectively).
+
+The final output is a time enabled map service with a rolling 90 day window of global rainfall.
