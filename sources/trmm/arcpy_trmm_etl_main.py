@@ -18,7 +18,7 @@ import sys
 import arcpy
 
 # Add the ETLBaseModule directory location to the system path in order to import the shared ETLframework modules
-sys.path.append("D:\\SERVIR\\ReferenceNode\\ETL\\ETLScripts\\ETLBaseModules\\")
+sys.path.append("PATH TO ETL\\ReferenceNode\\ETL\\ETLScripts\\ETLBaseModules\\")
 
 # ETL framework
 from etl_controller import ETLController
