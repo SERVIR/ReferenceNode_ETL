@@ -255,7 +255,7 @@ def createTRMMComposities(raster_catalog, output_basepath, start_datetime, color
     # TRMM1Day config --------------------------------------------------------------------------------
     factory_specifications_1day = deepcopy(factory_specifications)
     factory_specifications_1day['output_raster_fullpath'] = os.path.join(output_basepath, "TRMM1Day")
-    factory_specifications_1day['AddColormap_management_config']['input_CLR_file'] = "D:\\SERVIR\\ReferenceNode\\MapServices\\trmm_1day.clr"
+    factory_specifications_1day['AddColormap_management_config']['input_CLR_file'] = "PATH TO COLORMAP\\ReferenceNode\\MapServices\\trmm_1day.clr"
     input_raster_catalog_options_1day = deepcopy(input_raster_catalog_options)
     input_raster_catalog_options_1day['end_datetime'] = start_datetime - timedelta(days=1)
     trmm_1day = TRMMCustomRasterRequest({
@@ -269,7 +269,7 @@ def createTRMMComposities(raster_catalog, output_basepath, start_datetime, color
     # TRMM7Day config --------------------------------------------------------------------------------
     factory_specifications_7day = deepcopy(factory_specifications)
     factory_specifications_7day['output_raster_fullpath'] = os.path.join(output_basepath, "TRMM7Day")
-    factory_specifications_7day['AddColormap_management_config']['input_CLR_file'] = "D:\\SERVIR\\ReferenceNode\\MapServices\\trmm_7day.clr"
+    factory_specifications_7day['AddColormap_management_config']['input_CLR_file'] = "PATH TO COLOR MAP\\ReferenceNode\\MapServices\\trmm_7day.clr"
     input_raster_catalog_options_7day = deepcopy(input_raster_catalog_options)
     input_raster_catalog_options_7day['end_datetime'] = start_datetime - timedelta(days=7)
     trmm_7day = TRMMCustomRasterRequest({
@@ -283,7 +283,7 @@ def createTRMMComposities(raster_catalog, output_basepath, start_datetime, color
     # TRMM30Day config --------------------------------------------------------------------------------
     factory_specifications_30day = deepcopy(factory_specifications)
     factory_specifications_30day['output_raster_fullpath'] = os.path.join(output_basepath, "TRMM30Day")
-    factory_specifications_30day['AddColormap_management_config']['input_CLR_file'] = "D:\\SERVIR\\ReferenceNode\\MapServices\\TRMM_30Day.clr"
+    factory_specifications_30day['AddColormap_management_config']['input_CLR_file'] = "PATH TO COLOR MAP\\ReferenceNode\\MapServices\\TRMM_30Day.clr"
     input_raster_catalog_options_30day = deepcopy(input_raster_catalog_options)
     input_raster_catalog_options_30day['end_datetime'] = start_datetime - timedelta(days=30)
     trmm_30day = TRMMCustomRasterRequest({
